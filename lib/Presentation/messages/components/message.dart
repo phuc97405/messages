@@ -10,7 +10,7 @@ import 'package:messages/models/ChatMessage.dart';
 
 import 'audio_message.dart';
 
-class Message extends GetView {
+class Message extends GetWidget {
   const Message({
     Key? key,
     required this.message,
@@ -61,7 +61,7 @@ class Message extends GetView {
   }
 }
 
-class MessageStatusDot extends GetView {
+class MessageStatusDot extends GetWidget {
   final MessageStatus status;
 
   const MessageStatusDot({Key? key, required this.status}) : super(key: key);

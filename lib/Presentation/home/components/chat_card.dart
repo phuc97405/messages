@@ -1,12 +1,10 @@
-
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:messages/Shared/constants.dart';
 import 'package:messages/models/Chat.dart';
 
-class ChatCard extends StatelessWidget {
+class ChatCard extends GetWidget {
   const ChatCard({Key? key, required this.chat, required this.press})
       : super(key: key);
   final Chat chat;
@@ -14,7 +12,7 @@ class ChatCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-        onTap:press,
+        onTap: press,
         child: Padding(
           padding: EdgeInsets.symmetric(
               horizontal: kDefaultPadding, vertical: kDefaultPadding * 0.75),

@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
+
 import 'package:messages/Presentation/Auth/Welcome/welcome.dart';
-import 'package:messages/Presentation/Auth/Welcome/welcome_binding.dart';
-import 'package:messages/Presentation/Auth/signin_or_signup.dart';
-import 'package:messages/Presentation/Auth/signin_or_signup_binding.dart';
 import 'package:messages/Presentation/Home/home.dart';
 import 'package:messages/Presentation/Home/home_binding.dart';
+import 'package:messages/Presentation/auth/Login/login_binding.dart';
+import 'package:messages/Presentation/auth/Login/login_screen.dart';
+import 'package:messages/Presentation/auth/Signup/sign_up_binding.dart';
+import 'package:messages/Presentation/auth/Signup/sign_up_screen.dart';
+import 'package:messages/Presentation/auth/Welcome/background.dart';
 import 'package:messages/Presentation/messages/messages_binding.dart';
 import 'package:messages/Presentation/messages/messages_screen.dart';
 
@@ -33,16 +35,25 @@ class _MyAppState extends State<MyApp> {
           GetPage(
               name: '/',
               page: () => Welcome(),
-              binding: WelcomeBinding(),
               transition: Transition.leftToRight),
           GetPage(
             name: '/auth',
-            page: () => SignInAndSignUp(),
-            binding: SignInOrSignUpBinding(),
+            page: () => Background(),
           ),
           GetPage(
-              name: '/home', page: () => HomePage(), binding: HomeBinding()),GetPage(
-              name: '/messages', page: () => MessagesScreen(), binding: MessagesBinding()),
+              name: '/signin',
+              page: () => LoginScreen(),
+              binding: LoginBinding()),
+          GetPage(
+              name: '/signup',
+              page: () => SignUpScreen(),
+              binding: SignUpBinding()),
+          GetPage(
+              name: '/home', page: () => HomePage(), binding: HomeBinding()),
+          GetPage(
+              name: '/messages',
+              page: () => MessagesScreen(),
+              binding: MessagesBinding()),
         ]);
   }
 }

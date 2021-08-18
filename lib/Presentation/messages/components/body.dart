@@ -7,7 +7,7 @@ import 'package:messages/models/ChatMessage.dart';
 import 'chat_input_field.dart';
 import 'message.dart';
 
-class Body extends GetView {
+class Body extends GetWidget {
   const Body({Key? key}) : super(key: key);
 
   @override
@@ -28,6 +28,3 @@ class Body extends GetView {
     );
   }
 }
-
-
-

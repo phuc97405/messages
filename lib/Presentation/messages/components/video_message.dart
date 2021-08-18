@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 
 import 'package:messages/Shared/constants.dart';
 
-class VideoMessage extends StatelessWidget {
+class VideoMessage extends GetWidget {
   const VideoMessage({Key? key}) : super(key: key);
   Widget build(BuildContext context) {
     return SizedBox(

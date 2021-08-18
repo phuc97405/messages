@@ -34,6 +34,7 @@ dependencies:
   dio: ^4.0.0
   provider: ^5.0.0
   flutter_spinkit: ^5.0.0
+  flutter_svg: ^0.22.0
 
 dev_dependencies:
   flutter_test:
@@ -51,15 +52,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/icons/logo.jpeg
-    - assets/images/splash.png
-    - assets/images/user1.jpeg
-    - assets/images/user2.png
-    - assets/images/user3.jpeg
-    - assets/images/user4.jpeg
-    - assets/images/user5.png
-    - assets/images/user6.jpeg
-    - assets/images/video.jpeg
+    - assets/icons/
+    - assets/images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

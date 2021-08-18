@@ -5,6 +5,6 @@ import 'app_controller.dart';
 class AppBinding extends Bindings {
   @override
   void dependencies() {
-    AppController();
+    Get.lazyPut<AppController>(() => AppController());
   }
 }

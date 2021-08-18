@@ -8,7 +8,7 @@ import 'package:messages/models/Chat.dart';
 
 import 'chat_card.dart';
 
-class Bodys extends GetView<HomeController> {
+class Bodys extends GetWidget<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Column(

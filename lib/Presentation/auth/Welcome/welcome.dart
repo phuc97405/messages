@@ -4,7 +4,7 @@ import 'package:get/state_manager.dart';
 import 'package:get/get.dart';
 import 'package:messages/Shared/constants.dart';
 
-class Welcome extends GetView<GetxController> {
+class Welcome extends GetWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(

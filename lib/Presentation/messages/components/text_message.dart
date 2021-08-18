@@ -2,11 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 
-
 import 'package:messages/Shared/constants.dart';
 import 'package:messages/models/ChatMessage.dart';
 
-class TextMessage extends GetView {
+class TextMessage extends GetWidget {
   const TextMessage({
     Key? key,
     required this.message,

@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 import 'package:messages/Shared/constants.dart';
 
-class ChatInputField extends GetView {
+class ChatInputField extends GetWidget {
   const ChatInputField({
     Key? key,
   }) : super(key: key);

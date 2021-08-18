@@ -4,7 +4,7 @@ import 'package:get/get_state_manager/get_state_manager.dart';
 
 import 'constants.dart';
 
-class PrimaryButton extends GetView {
+class PrimaryButton extends GetWidget {
   const PrimaryButton(
       {Key? key,
       required this.text,

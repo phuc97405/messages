@@ -11,26 +11,26 @@ import 'home_controller.dart';
 double width = MediaQueryData.fromWindow(window).size.width;
 double height = MediaQueryData.fromWindow(window).size.height;
 
-class HomePage extends GetView<HomeController> {
+class HomePage extends GetWidget<HomeController> {
   Widget build(BuildContext context) {
-    return  Obx(()=>Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        // leading: Icon(Icons.menu_open),
-        title: Text('Message'),
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.search))],
-      ),
-      body: Bodys(),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: kPrimaryColor,
-        onPressed: () {},
-        child: Icon(
-          Icons.person_add,
-          color: Colors.white,
-        ),
-      ),
-      bottomNavigationBar: bottomNavigationBar(),
-    ));
+    return Obx(() => Scaffold(
+          appBar: AppBar(
+            automaticallyImplyLeading: false,
+            // leading: Icon(Icons.menu_open),
+            title: Text('Message'),
+            actions: [IconButton(onPressed: () {}, icon: Icon(Icons.search))],
+          ),
+          body: Bodys(),
+          floatingActionButton: FloatingActionButton(
+            backgroundColor: kPrimaryColor,
+            onPressed: () {},
+            child: Icon(
+              Icons.person_add,
+              color: Colors.white,
+            ),
+          ),
+          bottomNavigationBar: bottomNavigationBar(),
+        ));
   }
 
   BottomNavigationBar bottomNavigationBar() {

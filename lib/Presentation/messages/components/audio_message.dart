@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:messages/Shared/constants.dart';
 import 'package:messages/models/ChatMessage.dart';
 
-class AudioMessage extends GetView {
+class AudioMessage extends GetWidget {
   const AudioMessage({Key? key, required this.message}) : super(key: key);
 
   final ChatMessage message;
