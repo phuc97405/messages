@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:messages/Presentation/auth/Login/login_controller.dart';
+import 'package:messages/Presentation/auth/component/already_have_an_account_check.dart';
 
 import 'package:messages/Presentation/auth/component/rouded_button.dart';
 import 'package:messages/Presentation/auth/component/rouded_input_field.dart';
@@ -49,15 +50,17 @@ class LoginScreen extends GetWidget<LoginController> {
               ),
               RoudedButton(
                 text: 'LOGIN',
-                press: () {},
+                press: () {
+                  Get.toNamed('/home');
+                },
                 color: Colors.white,
               ),
-              // AlreadyHaveAnAccountCheck(
-              //   login: true,
-              //   press: () {
-              //     Get.toNamed('/signup');
-              //   },
-              // )
+              AlreadyHaveAnAccountCheck(
+                login: true,
+                press: () {
+                  Get.toNamed('/signup');
+                },
+              )
             ],
           ),
         ),

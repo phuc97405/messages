@@ -35,7 +35,9 @@ class RoudedButton extends GetWidget {
               primary: color,
               padding: EdgeInsets.symmetric(
                   vertical: kDefaultPadding, horizontal: kDefaultPadding * 2)),
-          onPressed: press(),
+          onPressed: () {
+            press();
+          },
           child: Text(
             text,
             style: TextStyle(color: color),

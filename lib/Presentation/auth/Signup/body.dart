@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:messages/Presentation/auth/Signup/sign_up_controller.dart';
+import 'package:messages/Presentation/auth/component/already_have_an_account_check.dart';
 
 import 'package:messages/Presentation/auth/component/rouded_button.dart';
 import 'package:messages/Presentation/auth/component/rouded_input_field.dart';
@@ -53,12 +54,12 @@ class Body extends GetWidget<SignUpController> {
           press: () {},
           color: Colors.white,
         ),
-        // AlreadyHaveAnAccountCheck(
-        //   login: false,
-        //   press: () {
-        //     Get.toNamed('/signin');
-        //   },
-        // )
+        AlreadyHaveAnAccountCheck(
+          login: false,
+          press: () {
+            Get.toNamed('/signin');
+          },
+        ),
         OrDivider(),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

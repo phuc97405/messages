@@ -8,7 +8,6 @@ class AlreadyHaveAnAccountCheck extends GetWidget {
   final bool login;
   final Function press;
 
-  
   const AlreadyHaveAnAccountCheck(
       {Key? key, this.login = true, required this.press})
       : super(key: key);
@@ -23,7 +22,9 @@ class AlreadyHaveAnAccountCheck extends GetWidget {
           style: TextStyle(color: kPrimaryColor),
         ),
         GestureDetector(
-          onTap: press(),
+          onTap: () {
+            press();
+          },
           child: Text(
             login ? 'Sign Up' : 'Sign In',
             style: TextStyle(color: kPrimaryColor, fontWeight: FontWeight.bold),
